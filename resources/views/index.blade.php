@@ -2,7 +2,6 @@
 
 
 @section('content')
-<div>Index Movies</div>
 <div class="container mx-auto px-4 pt-16">
     <div class="popular-movies">
         <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Popular Movies</h2>

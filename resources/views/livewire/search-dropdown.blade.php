@@ -26,7 +26,7 @@
             class="z-50 absolute bg-gray-800 text-sm rounded w-64 mt-4"
             x-show.transition.opacity="isOpen"
         >
-            @if ($searchResults->count() > 0)
+            @if (count($searchResults) > 0)
                 <ul>
                     @foreach ($searchResults as $result)
                         <li class="border-b border-gray-700">
