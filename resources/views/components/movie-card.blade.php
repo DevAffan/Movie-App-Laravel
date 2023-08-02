@@ -1,3 +1,4 @@
+@props(['movie', 'genres'])
 <div class="mt-8">
     <a href="{{ route('movies.show', $movie['id']) }}">
         <img src="{{ 'https://image.tmdb.org/t/p/w500'.$movie['poster_path'] }}" alt="poster" class="hover:opacity-75 transition ease-in-out duration-150">
