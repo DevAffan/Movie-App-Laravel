@@ -9,6 +9,8 @@
     @vite('resources/css/app.css')
     @livewireStyles
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    {{-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@3.10.3/dist/alpine.min.js"
+                defer></script> --}}
 </head>
 <body class="font-sans bg-gray-900 text-white">
     <nav class="border-b border-gray-800">
@@ -45,7 +47,7 @@
             Powered by <a href="https://www.themoviedb.org/documentation/api" class="underline hover:text-gray-300">TMDb API</a>
         </div>
     </footer>
-    @livewireScripts
     @yield('scripts')
+    @livewireScripts
 </body>
 </html>
