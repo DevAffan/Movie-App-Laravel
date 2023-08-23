@@ -35,7 +35,7 @@
                 <livewire:search-dropdown>
                 <div class="md:ml-4 mt-3 md:mt-0">
                     <a href="#">
-                        <img src="https://icons8.com/icon/9q3GMpxNIMjC/user" alt="avatar" class="rounded-full w-8 h-8">
+                        <img src="https://www.shareicon.net/data/512x512/2016/05/24/770137_man_512x512.png" alt="avatar" class="rounded-full w-8 h-8">
                     </a>
                 </div>
             </div>
