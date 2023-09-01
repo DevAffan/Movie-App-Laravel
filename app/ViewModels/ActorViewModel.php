@@ -1,5 +1,4 @@
 <?php
-
 namespace App\ViewModels;
 
 use Carbon\Carbon;
@@ -9,9 +8,7 @@ class ActorViewModel extends ViewModel
 {
     public $actor;
     public $social;
-
     public $credits;
-
 
     public function __construct($actor, $social, $credits)
     {
@@ -19,7 +16,6 @@ class ActorViewModel extends ViewModel
         $this->social = $social;
         $this->credits = $credits;
     }
-
 
     public function actor(){
         return collect($this->actor)->merge([
@@ -59,8 +55,6 @@ class ActorViewModel extends ViewModel
     public function credits(){
 
         $castMovies = collect($this->credits)->get('cast');
-
-
 
         return collect($castMovies)->map(function($movie){
 
