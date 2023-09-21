@@ -34,7 +34,7 @@ class ActorsViewModel extends ViewModel
             return collect($actor)->merge([
                 'profile_path' => $actor['profile_path'] ?
                     'https://image.tmdb.org/t/p/w235_and_h235_face' . $actor['profile_path']
-                    : 'https://via.placeholder.com/500x700',
+                    : 'https://via.placeholder.com/235x235',
                 'known_for' => collect($actor['known_for'])->where('media_type', 'movie')->pluck('original_title')->union(
                 collect($actor['known_for'])->pluck('name'))->implode(', '),
             ])

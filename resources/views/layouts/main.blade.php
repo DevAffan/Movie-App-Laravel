@@ -43,10 +43,16 @@
     </nav>
     @yield('content')
     <footer class="border border-t border-gray-800">
-        <div class="container mx-auto text-sm px-4 py-6">
-            Powered by <a href="https://www.themoviedb.org/documentation/api" class="underline hover:text-gray-300">TMDb API</a>
+        <div class="container mx-auto text-sm px-4 py-6 flex justify-between">
+            <div>
+                Created by <a href="#" class="underline hover:text-gray-300 text-base">Affan Ali</a> with <span>&#10084;</span>
+            </div>
+            <div>
+                Powered by <a href="https://www.themoviedb.org/documentation/api" class="underline hover:text-gray-300">TMDb API</a>
+            </div>
         </div>
     </footer>
+
     @yield('scripts')
     @livewireScripts
 </body>
