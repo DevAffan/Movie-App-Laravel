@@ -22,13 +22,13 @@
                     </a>
                 </li>
                 <li class="md:ml-16 mt-3 md:mt-0">
-                    <a href="#" class="hover:text-gray-300">Movies</a>
+                    <a href="{{ route('movies.index') }}" class="hover:text-gray-300">Movies</a>
                 </li>
                 <li class="md:ml-6 mt-3 md:mt-0">
-                    <a href="#" class="hover:text-gray-300">TV Shows</a>
+                    <a href="{{ route('tvshows.index') }}" class="hover:text-gray-300">TV Shows</a>
                 </li>
                 <li class="md:ml-6 mt-3 md:mt-0">
-                    <a href="#" class="hover:text-gray-300">Actors</a>
+                    <a href="{{ route('actors.index') }}" class="hover:text-gray-300">Actors</a>
                 </li>
             </ul>
             <div class="flex flex-col md:flex-row items-center">
@@ -43,10 +43,16 @@
     </nav>
     @yield('content')
     <footer class="border border-t border-gray-800">
-        <div class="container mx-auto text-sm px-4 py-6">
-            Powered by <a href="https://www.themoviedb.org/documentation/api" class="underline hover:text-gray-300">TMDb API</a>
+        <div class="container mx-auto text-sm px-4 py-6 flex justify-between">
+            <div>
+                Created by <a href="#" class="underline hover:text-gray-300 text-base">Affan Ali</a> with <span>&#10084;</span>
+            </div>
+            <div>
+                Powered by <a href="https://www.themoviedb.org/documentation/api" class="underline hover:text-gray-300">TMDb API</a>
+            </div>
         </div>
     </footer>
+
     @yield('scripts')
     @livewireScripts
 </body>
