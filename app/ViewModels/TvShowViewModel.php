@@ -14,7 +14,7 @@ class TvShowViewModel extends ViewModel
     }
 
     public function tvshow(){
-        // dd($this->tvshow['videos']);
+        // dd($this->tvshow);
         return collect($this->tvshow)->merge([
             'poster_path' => 'https://image.tmdb.org/t/p/w500/'.$this->tvshow['poster_path'],
             'first_air_date' => \Carbon\Carbon::parse($this->tvshow['first_air_date'])->format('M d, Y'),

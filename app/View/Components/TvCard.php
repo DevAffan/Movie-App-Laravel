@@ -12,7 +12,7 @@ class TvCard extends Component
      * @return void
      */
 
-     protected $tvshow;
+     public $tvshow;
 
     public function __construct($tvshow)
     {
